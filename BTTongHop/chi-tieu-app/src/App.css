@@ -1,0 +1,137 @@
+body {
+  background-color: #f8b5b5c2; /* Màu nền tùy chọn */
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.App {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.App h1 {
+  text-align: center;
+  color: #ea5a5a;
+}
+.App h2 {
+  color: #e43f3f;
+}
+.expense-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.expense-form.editing input {
+  padding: 15px;
+  font-size: 16px;
+  background-color: #f6f6f6;
+  color:#000000 ;
+  border-width: 0cap;
+  border-radius: 15px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.expense-form input {
+  padding: 15px;
+  font-size: 16px;
+  background-color: #f79f9f;
+  color:#000000 ;
+  border-width: 0cap;
+  border-radius: 15px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.expense-form input::placeholder {
+  color: #ffffff; 
+  opacity: 0.7;     
+}
+.expense-form button {
+  padding: 8px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.expense-form button:hover {
+  background-color: #2980b9;
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f79f9f;
+  padding: 15px;
+  margin: 10px 0;
+  align-items: center;
+  border-radius: 15px;
+  font-family: '';
+}
+
+.expense-item button {
+  margin-left: 1px;
+}
+.btn-edit {
+  background-color: #ffc107; 
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 6px 12px;
+  margin-right: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  border-bottom: 2px solid #a97624;
+  border-right: 2px solid #a97624;
+  font-family: 'Courier New', Courier, monospace;
+}
+.btn-edit:hover {
+  background-color: #fced46; 
+  color: rgb(0, 0, 0);
+  border-bottom: 2px solid #8c6b1f;
+  border-right: 2px solid #8c6b1f;
+}
+.btn-delete {
+  background-color: #dc3545; 
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  border-bottom: 2px solid #a13e23;
+  border-right: 2px solid #a13e23;
+  font-family: 'Courier New', Courier, monospace;
+}
+.btn-delete:hover {
+  background-color: #f42136; 
+  color: rgb(0, 0, 0);
+  border-bottom: 2px solid #8a2f1d;
+  border-right: 2px solid #8a2f1d;
+}
+.expense-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 4px solid #ec4040;
+  border-right: 4px solid #ec4040;
+}
+
+.expense-title {
+  flex: 2; 
+}
+
+.expense-amount {
+  flex: 1;
+  text-align: right;
+}
+
+.expense-date {
+  flex: 1;
+  text-align: right;
+  color: rgb(13, 13, 13);
+}
+
+.expense-actions {
+  flex: 1;
+  text-align: right;
+}
+
